@@ -29,7 +29,7 @@ function Navbar() {
 
 
            {/*Logo For the NavBar*/}
-            <img class="navbarLogo" src={Logo}></img>
+            <img class="navbarLogo" alt="Main Logo" src={Logo}></img>
 
             
 

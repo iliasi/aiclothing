@@ -3,6 +3,7 @@ import "../App.css";
 import ReorderIcon from "@material-ui/icons/Reorder";
 import SearchIcon from "@material-ui/icons/Search";
 import Logo from "../images/logo.png";
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
 
@@ -15,10 +16,10 @@ function Navbar() {
              {/*Links for NavBar*/}
             <div className="leftSide">
                 <div className="links" id={showLinks ? "hidden" : ""}>
-                    <a href="/home">Home</a>
-                    <a href="/mens">Mens</a>
-                    <a href="/women">Womens</a>
-                    <a href="/sale">Sale</a>
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/mens">Mens</NavLink>
+                    <NavLink to="/womens">Womens</NavLink>
+                    <NavLink to="/sales">Sales</NavLink>
                 </div>
                 <button onClick={() => setShowLinks(!showLinks)}> 
                 <ReorderIcon />
